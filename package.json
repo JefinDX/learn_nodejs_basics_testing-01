@@ -1,0 +1,19 @@
+{
+  "name": "basics",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --ignore 'test/**/*' ./index.js",
+    "test": "npm run test:unit && npm run test:integration",
+    "test:unit": "jest \"test/unit/.*\\.spec\\.js\"",
+    "test:integration": "jest \"test/integration/.*\\.spec\\.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.7",
+    "supertest": "^7.0.0"
+  }
+}
